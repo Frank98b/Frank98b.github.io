@@ -1,14 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>宁浩骞的简历</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank.github.io</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Cache" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="https://res.drea.cc/cdn/element-ui/2.15.7/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <h1>Hello,github</h1>
-    <h2>git</h2>
-    <p>做一次简单的修改</p>
+    <div id="app" v-cloak>
+
+        <el-row>
+            <el-col :span="5" class="head">
+                <img src="./img/head.jpg" />
+            </el-col>
+
+            <el-col :span="19" class="info">
+                <h1>{{resume.base.name}}</h1>
+                <p>{{resume.base.sex}} | {{resume.base.birthday}} | {{resume.base.address}}
+                    <img src="./img/phone.png" />{{resume.base.phone}}
+                    <img src="./img/mail.png" />{{resume.base.mail}}
+                </p>
+                <p>{{resume.base.jobState}} | {{resume.base.reportState}}  {{resume.base.experience}} | {{resume.base.position}} | {{resume.base.salary}}</p>
+            </el-col>
+        </el-row>
+
+        <el-row>
+            <el-col>
+                <div class="large-title">
+                    <div class="title">
+                        <p class="text">教育经历</p>
+                        <p class="color"></p>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+
+        <template v-for="item in resume.educations">
+            <el-row class="little-title ">
+                <el-col :span="6">
+                    <b>{{item.school}}</b>
+                </el-col>
+                <el-col :span="5">
+                    {{item.level}}
+                </el-col>
+                <el-col :span="7">
+                    {{item.professional}}
+                </el-col>
+                <el-col :span="6">
+                    {{item.duration}}
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col>
+                    <div class="content" v-html="item.content"></div>
+                </el-col>
+            </el-row>
+        </template>
+
+        <el-row>
+            <el-col>
+                <div class="large-title">
+                    <div class="title">
+                        <p class="text">技能掌握</p>
+                        <p class="color"></p>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+
+        <el-row>
+            <el-col>
+                <div class="content" v-html="resume.advantage.content"></div>
+            </el-col>
+        </el-row>
+
+        <el-row>
+            <el-col>
+                <div class="large-title">
+                    <div class="title">
+                        <p class="text">项目经历</p>
+                        <p class="color"></p>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+
+        <template v-for="item in resume.projects">
+            <el-row class="little-title ">
+                <el-col :span="8">
+                    <b>{{item.name}}</b>
+                </el-col>
+                <el-col :span="10">
+                    {{item.position}}
+                </el-col>
+                <el-col :span="6">
+                    {{item.duration}}
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col>
+                    <div class="content" v-html="item.content"></div>
+                </el-col>
+            </el-row>
+        </template>
+
+        <el-row>
+            <el-col>
+                <div class="large-title">
+                    <div class="title">
+                        <p class="text">工作经历</p>
+                        <p class="color"></p>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+
+        <template v-for="item in resume.works">
+            <el-row class="little-title ">
+                <el-col :span="8">
+                    <b>{{item.company}}</b>
+                </el-col>
+                <el-col :span="10">
+                    {{item.position}}
+                </el-col>
+                <el-col :span="6">
+                    {{item.duration}}
+                </el-col>
+            </el-row>
+
+            <el-row>
+                <el-col>
+                    <div class="content" v-html="item.content"></div>
+                </el-col>
+            </el-row>
+        </template>
+
+        <el-row>
+            <el-col>
+                <div class="large-title">
+                    <div class="title">
+                        <p class="text">资格证书</p>
+                        <p class="color"></p>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+
+        <el-row>
+            <el-col>
+                <div class="content">
+                    <ul class="tag">
+                        <li v-for="item in resume.certificates">{{item}}</li>
+                    </ul>
+
+                </div>
+            </el-col>
+        </el-row>
+
+    </div>
 </body>
+<script src="https://res.drea.cc/cdn/vue/2.6.14/vue.min.js"></script>
+<script src="https://res.drea.cc/cdn/element-ui/2.15.7/index.js"></script>
+<script src="./js/index.js?v=1.0.2"></script>
+
 </html>
