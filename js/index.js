@@ -9,16 +9,16 @@ new Vue({
                     birthday: "1998-05",
                     address: "大连",
                     phone: "18742505001",
-                    mail: "512926190@qq.com",
+                    mail: "frankning98@gmail.com",
                     jobState: "离职",
                     reportState: "随时到岗",
                     experience: "",
                     position: "前端工程师",
-                    salary: "6-7K"
+                    salary: "8k-10K"
                 },
                 advantage: {
                     content: `
-                    熟练使用HTML，CSS，JavaScript进行PC端与移动端开发
+                    熟练使用HTML，CSS，JavaScript 进行跨端开发
                     熟练使用vue全家桶（vue-cli，vue-router，axios，vuex）进行组件化开发
                     熟练使用ajax，掌握axios，JSON数据传输与后端数据交互
                     熟练掌握less预编译处理器
