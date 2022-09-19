@@ -60,7 +60,7 @@ new Vue({
                         6.使用axios封装,对接口进行封装
                         7.使用vuex对项目数据进行集中管理
                         ● 仓库地址：<a href='https://github.com/Frank98b/toutiao-m' target="_blank">https://github.com/Frank98b/toutiao-m<a/>
-                        ● 演示视频：<a href='#' target="_blank">#<a/>
+                        ● 演示视频：<a href='https://www.bilibili.com/video/BV1tP411H7tq' target="_blank">https://www.bilibili.com/video/BV1tP411H7tq<a/>
                         `
                     },
                      {
@@ -78,7 +78,7 @@ new Vue({
                         6.使用axios封装,对接口进行封装。
                         7.使用防抖原理优化搜索页面的搜索结果展示。
                         ● 仓库地址：<a href='https://github.com/Frank98b/cloud_demo' target="_blank">https://github.com/Frank98b/cloud_demo<a/>
-                        ● 演示视频：<a href='https://drea.cc' target="_blank">https://drea.cc<a/>`
+                        ● 演示视频：<a href='https://www.bilibili.com/video/BV1MV4y1u7DF' target="_blank">https://www.bilibili.com/video/BV1MV4y1u7DF<a/>`
                     }
                 ],
                 certificates: ["见习工业工程师", "CET4级证书", ],
