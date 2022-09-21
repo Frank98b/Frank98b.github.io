@@ -29,6 +29,10 @@ body {
     object-fit: contain;
 }
 
+.info {
+    font-size: 13px;
+}
+
 .info img {
     display: inline-block;
     width: 16px;
@@ -88,6 +92,7 @@ body {
     display: inline-block;
     white-space: pre-line;
     word-break: break-word;
+    font-size: 13px;
 }
 
 .little-title {
@@ -112,4 +117,9 @@ li {
 
 .fontBold {
     font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: skyblue;
 }
